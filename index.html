@@ -2,53 +2,158 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abiola Portfolio</title>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <header>
-    <h1>Abiola Portfolio</h1>
-    <p>Frontend Projects Showcase</p>
-  </header>
+  <!-- HERO SECTION -->
+  <section class="hero">
 
-  <section class="container">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#"><i class="fas fa-home"></i> Home</a>
+      <a href="#"><i class="fas fa-briefcase"></i> Projects</a>
+      <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
 
-    <div class="card">
-      <i class="fab fa-instagram instagram"></i>
-      <h3>Instagram Clone</h3>
-      <p>A photo sharing app UI clone.</p>
-      <a href="./Instagram/index.html" target="_blank">View Project</a>
+    <!-- HERO CONTENT -->
+    <div class="hero-content">
+
+      <h1 class="main-title">
+        Abiola's Portfolio
+      </h1>
+
+      <p class="subtitle">
+        Frontend Projects Showcase
+      </p>
+
+      <div class="scroll-btn">
+        <i class="fas fa-angle-down"></i>
+      </div>
+
     </div>
 
-    <div class="card">
-      <i class="fab fa-twitter twitter"></i>
-      <h3>Twitter Clone</h3>
-      <p>A microblogging platform clone.</p>
-      <a href="./Twitter/index.html" target="_blank">View Project</a>
-    </div>
+    <!-- FLOATING CIRCLES -->
+    <div class="circle one"></div>
+    <div class="circle two"></div>
+    <div class="circle three"></div>
 
-    <div class="card">
-      <i class="fab fa-linkedin linkedin"></i>
-      <h3>LinkedIn Clone</h3>
-      <p>A professional networking app clone.</p>
-      <a href="./LinkedIn/index.html" target="_blank">View Project</a>
-    </div>
+  </section>
 
-    <div class="card">
-      <i class="fab fa-facebook facebook"></i>
-      <h3>Facebook Clone</h3>
-      <p>A social networking platform clone.</p>
-      <a href="./Facebook/index.html" target="_blank">View Project</a>
+  <!-- PROJECT SECTION -->
+  <section class="projects">
+
+    <h2 class="project-title">
+      My Projects
+    </h2>
+
+    <div class="line"></div>
+
+    <div class="project-grid">
+
+      <!-- INSTAGRAM -->
+      <div class="card">
+        <i class="fab fa-instagram icon instagram"></i>
+
+        <h3>Instagram Clone</h3>
+
+        <p>
+          A photo sharing app UI clone.
+        </p>
+        <a href="./Instagram/index.html" target="_blank">
+          <button>
+            View Project
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+
+      <!-- TWITTER -->
+      <div class="card">
+        <i class="fab fa-twitter icon twitter"></i>
+
+        <h3>Twitter Clone</h3>
+
+        <p>
+          A microblogging platform clone.
+        </p>
+        <a href="./Twitter/index.html" target="_blank">
+          <button>
+            View Project
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+
+      <!-- LINKEDIN -->
+      <div class="card">
+        <i class="fab fa-linkedin icon linkedin"></i>
+
+        <h3>LinkedIn Clone</h3>
+
+        <p>
+          A professional networking app clone.
+        </p>
+        <a href="./LinkedIn/index.html" target="_blank">
+          <button>
+            View Project
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+
+      <!-- FACEBOOK -->
+      <div class="card">
+        <i class="fab fa-facebook icon facebook"></i>
+
+        <h3>Facebook Clone</h3>
+
+        <p>
+          A social networking platform clone.
+        </p>
+        <a href="./Facebook/index.html" target="_blank">
+          <button>
+            View Project
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </a>
+      </div>
+
     </div>
 
   </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 Abiola. All rights reserved.
+    </p>
+
+    <div class="socials">
+
+      <a href="#">
+        <i class="fab fa-github"></i>
+        @Abiola-1225
+      </a>
+
+      <a href="#">
+        <i class="fab fa-linkedin"></i>
+        @Abiola Babatunde
+      </a>
+
+    </div>
+
+  </footer>
 
 </body>
 

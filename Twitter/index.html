@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Twitter</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +13,7 @@
 
 <body>
   <section class="twitter">
-    <div class="twitter-header-1">
+    <div class="twitter-header-1 position-1">
       <div class="twitter-sidebar">
         <i class="fa-brands fa-twitter"></i>
 
@@ -26,7 +26,11 @@
           <span class="Explore-Text">Explore</span>
         </div>
         <div class="twitter-icons">
-          <i class="fa-solid fa-bell"></i>
+          <span class="bell_icon">
+            <i class="fa-solid fa-bell">
+              <div class="notification-count">1</div>
+            </i>
+          </span>
           <span class="Notifications-Text">Notifications</span>
         </div>
         <div class="twitter-icons">
@@ -53,18 +57,6 @@
         </div>
         <div class="twitter-icons">
           <button class="tweet-button">Tweet</button>
-        </div>
-        <div class="twitter-profile">
-          <div class="profile-space">
-            <div class="profile-pic"></div>
-            <div class="span-container">
-              <span class="profile-name">Abiola</span>
-              <span class="profile-username">@Abiola</span>
-            </div>
-          </div>
-          <div class="profile-icon">
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
         </div>
       </div>
     </div>
@@ -126,11 +118,17 @@
       </div>
       <div class="mutuals">
         <div class="avatar-stack">
-          <div class="mini"></div>
-          <div class="mini" style="background: #4BA0EC;"></div>
-          <div class="mini" style="background: #4BA0EC;"></div>
+          <div class="mini">
+            <img src="Wonder-Woman.png" alt="Profile" class="avatar">
+          </div>
+          <div class="mini">
+            <img src="Flash.jpg" alt="Profile" class="avatar">
+          </div>
+          <div class="mini">
+            <img src="Green-Latern.jpg" alt="Profile" class="avatar">
+          </div>
         </div>
-        Followed by Joe, Soap, and 9 others you follow
+        Followed by Wonder-Woman, Flash, and 9 others you follow
       </div>
       <div class="tabs">
         <div class="tab active">Tweets</div>
@@ -177,7 +175,7 @@
             <i class="fa-solid fa-retweet"></i>
           </span>
           <span class="action-like">
-            <i class="fa-regular fa-heart"></i>
+            <span class="action-icon"><i class=" fa-solid fa-heart"></i></span>
             <span class="count">2</span>
           </span>
           <span class="action">
@@ -224,7 +222,7 @@
             <i class="fa-solid fa-retweet"></i>
           </span>
           <span class="action-like">
-            <i class="fa-regular fa-heart"></i>
+            <span class="action-icon"><i class=" fa-solid fa-heart"></i></span>
             <span class="count">2</span>
           </span>
           <span class="action">
@@ -271,7 +269,7 @@
             <i class="fa-solid fa-retweet"></i>
           </span>
           <span class="action-like">
-            <i class="fa-regular fa-heart"></i>
+            <span class="action-icon"><i class=" fa-solid fa-heart"></i></span>
             <span class="count">2</span>
           </span>
           <span class="action">
@@ -279,78 +277,8 @@
           </span>
         </div>
       </div>
-
-      <!-- <div class="tweet">
-        <div class="tweet-container">
-          <div class="tweet-avatar">
-            <img src="tweet-avatar.jpg" alt="Profile" class="avatar">
-          </div>
-        </div>
-        <div class="tweet-body">
-          <div class="tweet-header">
-            <div class="tweet-meta">
-              <strong>Name</strong>
-              <span class="tweet-handle">@Name .</span>
-              <span class="tweet-time">18h</span>
-            </div>
-
-          </div>
-          <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's: <a href="#">bit.ly/2kvf6yj</a>
-          </div>
-          <div class="tweet-img">
-            <img src="tweet-image-2.png" alt="post-1">
-          </div>
-        </div>
-      </div>
-      <div class="tweet">
-        <div class="tweet-container">
-          <div class="tweet-avatar">
-            <img src="tweet-avatar.jpg" alt="Profile" class="avatar">
-          </div>
-        </div>
-        <div class="tweet-body">
-          <div class="tweet-header">
-            <div class="tweet-meta">
-              <strong>Name</strong>
-              <span class="tweet-handle">@Name .</span>
-              <span class="tweet-time">18h</span>
-            </div>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-
-          <div class="tweet-img">
-            <img src="tweet-image-3.png" alt="post-1">
-          </div>
-        </div>
-      </div>
-      <div class="tweet">
-        <div class="tweet-container">
-          <div class="tweet-avatar">
-            <img src="tweet-avatar.jpg" alt="Profile" class="avatar">
-          </div>
-        </div>
-        <div class="tweet-body">
-          <div class="tweet-header">
-            <div class="tweet-meta">
-              <strong>Name</strong>
-              <span class="tweet-handle">@Name .</span>
-              <span class="tweet-time">18h</span>
-            </div>
-            <i class="fa-solid fa-angle-down"></i>
-          </div>
-          <div class="tweet-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            Lorem Ipsum has been the industry's: <a href="#">bit.ly/2kvf6yj</a>
-          </div>
-          <div class="tweet-img">
-            <img src="tweet-image-4.jpg" alt="post-1">
-          </div>
-        </div>
-      </div> -->
     </div>
-    <div class="twitter-header-3">
+    <div class="twitter-header-3 position-2">
       <div class="search-bar">
         <button class="search-bar">Search Twitter</button>
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -382,9 +310,10 @@
         <div class="profile">
           <img src="Joker.png" alt="Profile" class="avatar">
           <div class="info">
-
-            <span class="name">Joker</span>
-            <span class="verified"><i class="fa-solid fa-circle-check"></i></span>
+            <div class="info-header">
+              <span class="name">Joker</span>
+              <span class="verified"><i class="fa-solid fa-circle-check"></i></span>
+            </div>
             <span class="handle">@The Joker</span>
             <div class="promo-icon">
               <i class="fa-solid fa-square-arrow-up-right"></i>
@@ -411,7 +340,6 @@
           </div>
           <button class="follow">Follow</button>
         </div>
-
         <a href="#" class="show-more">Show more</a>
       </div>
       <div class="trends">
@@ -464,7 +392,27 @@
         <a href="#" class="show-more">Show more</a>
       </div>
     </div>
+
+    <div class="tweeter-bottom-profile">
+      <div class="twitter-profile">
+        <div class="profile-space">
+          <div class="profile-pic">
+            <img src="tweet-image-4.png" alt="Profile" class="avatar">
+          </div>
+          <div class="span-container">
+            <span class="profile-name">Abiola</span>
+            <span class="profile-username">@Abiola</span>
+          </div>
+        </div>
+        <div class="profile-icon">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 
 </html>
+
+
+<!--  -->
